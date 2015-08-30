@@ -1,0 +1,313 @@
+/* 
+layout 
+------------------------------ */
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	}
+
+
+/* fix box model */
+*, *:before, *:after {
+	/* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+	-webkit-box-sizing: border-box; 
+	
+	/* Firefox (desktop or Android) 28- */
+	-moz-box-sizing: border-box;
+	
+	/* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+	box-sizing: border-box;
+	}
+
+
+#wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+	position: relative;
+	}
+
+#header {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.95);
+	width: 100%;
+	height: 50px;
+	}
+	
+#logo {
+	margin: auto 15px;
+	}
+
+#main {
+	margin: 0 auto;
+	padding: 75px 30px;
+	min-height: 640px;
+	clear: both;
+	}
+	
+#footer {
+	background-color: #999;
+	width: 100%;
+	}
+
+
+
+/* grid (4 column default) */
+.column {
+	float: left;
+	width: 25%;
+	min-height: 200px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	}
+
+.column.span2 {
+	width: 50%;
+	}
+	
+.column.span3 {
+	width: 75%;
+	}
+	
+.column.span4 {
+	width: 75%;
+	}
+	
+.column .column-content {
+	background-color: #ccc;
+	margin: 1px;
+	padding: 5px 15px;
+	position: relative;
+	}
+
+.column.no-style .column-content {
+	background-color: transparent;
+	}
+
+.row {
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	}
+
+.row.short .column {
+	min-height: 50px;
+	}
+
+/* grid (3 column) */	
+.row.grid-3-columns {
+	margin: 0 auto;
+	position: relative;
+	}
+
+.row.grid-3-columns .column {
+	width: 33.3%;
+	}
+
+.row.grid-3-columns .column.span2 {
+	width: 66.6%;
+	}
+
+.row.grid-3-columns .column.span3 {
+	width: 100%;
+	}
+
+
+/* 
+navigation 
+------------------------------ */
+a, 
+a:link, 
+a:active, 
+a:hover, 
+a:visited {
+	text-decoration: none;
+	color: #485a9a;
+	outline: none;
+	}
+
+a:hover {
+	color: #6784bf;
+	}
+
+#main-menu-trigger {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: #ccc;
+	}
+
+#main-menu {
+	position: absolute;
+	top: 50px;
+	right: 5px;
+	width: 25%;
+	background-color: rgba(0,0,0,0.98);
+	min-height: 200px;
+	}
+
+.social-networks {
+
+	}
+
+[class^="icon"] {
+	font-size: 22px;
+	}
+
+[class^="icon"] {
+	font-size: 36px;	
+	}
+
+
+/* 
+typography 
+------------------------------ */
+
+body {
+	font: normal 14px/1.3em "helvetica neue", helvetica, arial, sans-serif;
+	color: #333;
+	background: #fff;
+	}
+
+#logo {
+	font-size: 32px;
+	line-height: 45px;
+	color: #fff;
+	}
+
+#copyright { 
+	font-size: 12px;
+	}
+
+.no-bullet {
+	list-style: none;
+	padding-left: 0;
+	}
+
+.list-horz {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	}
+
+.list-horz li {
+	float: left;
+	margin: 0 5px;
+	padding: 0;
+	}
+
+#main-menu li a {
+	display: block;
+	}
+
+
+/* alignment 
+------------------------------ */
+
+.align-left {
+	float: left;
+	}
+
+.pad-left {
+	float: left;
+	margin: 0 15px 10px 0;
+	}
+
+.align-right {
+	float: right;
+	}
+
+.pad-right {
+	float: right;
+	margin: 0 0 10px 15px;
+	}
+
+.align-center {
+	text-align: center;
+	margin: 0 auto;
+	}
+ 
+.pad-center {
+	text-align: center;
+	margin: 15px auto;
+	}
+
+.clear {
+	clear: both;
+	}
+
+
+
+/* misc
+------------------------------ */
+
+/*
+input, textarea {
+	-webkit-appearance: none;
+	border-radius: 0;
+	border: none;
+	}
+
+textarea {
+   resize: none;
+}
+*/
+
+.hide {
+	display: none;
+	}
+
+.show {
+	display: block;
+	}
+
+.footnote {
+	margin-top: 35px;
+	font-size: 12px;
+	line-height: 1.5em;
+	color: #666666;
+	clear: both;
+	}
+
+img, a img {
+	border: 0;
+	border: none;
+	text-decoration: none;
+	}
+
+.border {
+	border: 1px solid #ccc;
+	box-shadow: 2px 5px 15px rgba(0,0,0,0.5);
+	}
+
+.no-border {
+	border-color: transparent;
+	}
+
+.inline {
+	display: inline;
+	}
+
+hr {
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+	margin: 25px auto;
+	width: 100%;
+	clear: both;
+	}
+
+.nobr {
+	white-space: nowrap;
+	}
+
+.disabled, 
+input[disabled][type=submit], 
+input[disabled=disabled][type=submit] {
+    pointer-events: none;
+    opacity: 0.5;
+	}
